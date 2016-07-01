@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_item_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/action_title_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_place" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/store_logo_placeholder" android:scaleType="fitCenter" />
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <RadioGroup android:orientation="horizontal" android:id="@id/group_like" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:textSize="14.0dip" android:textColor="@color/black" android:gravity="bottom|left|center" android:id="@id/like" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:button="@drawable/btn_toggle_like" android:text="@string/toggle_like" />
+                    <RadioButton android:textSize="14.0dip" android:textColor="@color/black" android:gravity="bottom|left|center" android:id="@id/unlike" android:layout_width="wrap_content" android:layout_height="30.0dip" android:button="@drawable/btn_toggle_unlike" android:text="@string/toggle_unlike" />
+                </RadioGroup>
+                <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:gravity="left" android:id="@id/txt_number_like" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageButton android:id="@id/btn_map" android:background="@drawable/btn_showonmap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+        </LinearLayout>
+        <RadioGroup android:orientation="horizontal" android:id="@id/group_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@id/details">
+            <RadioButton android:gravity="center" android:id="@id/details" android:text="@string/details" android:layout_weight="1.0" style="@style/PlaceDetailGroup" />
+            <RadioButton android:gravity="center" android:id="@id/contact" android:text="@string/Contact" android:layout_weight="1.0" style="@style/PlaceDetailGroup" />
+            <RadioButton android:gravity="center" android:id="@id/promo" android:text="@string/featured" android:layout_weight="1.0" style="@style/PlaceDetailGroup" />
+        </RadioGroup>
+        <ScrollView android:id="@id/scrl_desc" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ViewSwitcher android:id="@id/game_switcher" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/holiday_game_area_height">
+                    <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:id="@id/game_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+                        <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:gravity="center" android:layout_gravity="right" android:id="@id/game_num_views" android:layout_width="120.0dip" android:layout_height="fill_parent" android:shadowColor="#bb999999" android:shadowRadius="2.0" />
+                    </FrameLayout>
+                </ViewSwitcher>
+                <TextView android:id="@id/rating_header" android:visibility="gone" android:text="@string/user_rating" style="@style/Separator" />
+                <RatingBar android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/ratingbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" style="@style/RatingBar" />
+                <LinearLayout android:orientation="vertical" android:id="@id/desc_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/desc_header" android:text="@string/description" style="@style/Separator" />
+                    <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:gravity="top" android:id="@id/txt_desc" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="3" />
+                    <Button android:layout_gravity="right" android:id="@id/btn_more_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" style="@style/MoreButton" />
+                    <Button android:layout_gravity="right" android:id="@id/btn_less_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" style="@style/LessButton" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/hours_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/hours_header" android:text="@string/hours" style="@style/Separator" />
+                    <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:gravity="top" android:id="@id/txt_hours" android:padding="5.0dip" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <Button android:layout_gravity="right" android:id="@id/btn_more_hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" style="@style/MoreButton" />
+                    <Button android:layout_gravity="right" android:id="@id/btn_less_hours" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" style="@style/LessButton" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ScrollView android:id="@id/contact_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/phone_header" android:text="@string/phone" style="@style/Separator" />
+                <Button android:id="@id/btn_call" android:layout_width="fill_parent" android:layout_height="wrap_content" android:phoneNumber="true" style="@style/CallButton" />
+                <TextView android:id="@id/website_header" android:text="@string/website" style="@style/Separator" />
+                <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:textStyle="bold" android:textColorHighlight="@color/pi_blue_light" android:textColorLink="@color/pi_blue_dark" android:gravity="center" android:id="@id/txt_web_address" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:id="@id/address_header" android:text="@string/address" style="@style/Separator" />
+                <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:textSize="16.0dip" android:layout_gravity="center" android:id="@id/txt_address" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/promos_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <ListView android:id="@id/promo_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:gravity="center" android:id="@id/txt_no_promos" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/none" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

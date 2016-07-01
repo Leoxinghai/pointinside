@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="whats_new_messages">
+        <item>&lt;b>Mallopoly&lt;/b>"
+Play for a chance to win $100 daily gift card &amp; $1000 grand prize!
+
+To play, view any place in the app (store, restaurant, etc)"</item>
+    </string-array>
+    <string-array name="whats_new_message_icons">
+        <item>@drawable/snowflake_icon</item>
+    </string-array>
+</resources>

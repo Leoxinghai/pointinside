@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="num_minutes">
+        <item quantity="other">mins</item>
+        <item quantity="one">min</item>
+    </plurals>
+    <plurals name="place_num_views">
+        <item quantity="other">&lt;b>%d&lt;/b> views</item>
+        <item quantity="one">&lt;b>%d&lt;/b> view</item>
+    </plurals>
+</resources>

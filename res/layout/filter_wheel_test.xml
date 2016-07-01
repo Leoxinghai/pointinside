@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/splash_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/splashscreen_logo" android:scaleType="fitXY" />
+    <com.pointinside.android.app.widget.CenterWideChildLayout android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.pointinside.android.app.widget.FilterWheel android:id="@id/filter_wheel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.pointinside.android.app.widget.CenterWideChildLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/action_title_deal_list_bar" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="0.0px" android:cacheColorHint="@color/pi_heavenly_blue_light" android:layout_weight="1.0" style="@style/DealList" />
+</LinearLayout>

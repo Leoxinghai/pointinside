@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/deal_list_row_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/action_title_bar" />
+    <TextView android:textAppearance="?android:textAppearanceLargeInverse" android:ellipsize="end" android:id="@id/venue_name" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textColor="@color/black" android:id="@id/search_box" android:background="@drawable/textfield_search" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:hint="@string/search_hint" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch" />
+        <ImageButton android:id="@id/go" android:background="@drawable/btn_go_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_go_icon" />
+    </LinearLayout>
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" style="@style/DealList" />
+    <TextView android:textColor="@color/black" android:id="@id/no_results" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+</LinearLayout>

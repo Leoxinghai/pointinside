@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">瓜瓜逛街</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="hello">Hello World!</string>
+
+    <string name="build_timestamp">0</string>
+    <string name="maps_apikey">0WSxEcsMFT8fq3s4eOMECGj4rRvqo_ZIPuY712Q</string>
+    <string name="download_splash_fetching">Fetching venue list...</string>
+    <string name="download_splash_checking">Checking for updated venue list...</string>
+    <string name="download_splash_downloading">Downloading venue list...</string>
+    <string name="splash_terms">Point Inside is not affiliated with the individual stores, venues or other properties presented in our maps.</string>
+    <string name="msg_connectivity_error_reference">"Unable to download venue list
+
+Please make sure you have a network connection"</string>
+    <string name="msg_connectivity_error_venue">"Unable to download the venue
+
+Please make sure you have a network connection"</string>
+    <string name="msg_reference_download_error">An error occurred while downloading venue list</string>
+    <string name="msg_venue_download_error">An error occurred while downloading the venue</string>
+    <string name="txt_try_again">Try again</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_browse">Browse</string>
+    <string name="txt_share">Share</string>
+    <string name="dialog_fetch_place">Please wait while we fetch %s...</string>
+    <string name="dialog_downloading_place">Downloading %s for offline use...</string>
+    <string name="dialog_loading">Loading...</string>
+    <string name="dialog_connection_error">Connection Error!</string>
+    <string name="dialog_download_error">Download Error!</string>
+    <string name="dialog_sdcard_unavailable_title">SD Card not found</string>
+    <string name="msg_sdcard_unavailable">"This venue is located on the SD Card, which is currently unavailable.
+
+Would you like to re-download this venue?"</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_mylocation">My Location</string>
+    <string name="menu_about">About</string>
+    <string name="about_1">Point Inside? version %s</string>
+    <string name="about_2">Point Inside, Inc., All Rights Reserved</string>
+    <string name="about_3">www.pointinside.com</string>
+    <string name="about_4">Point Inside’s Indoor Smart Maps? allow you to take control of your mall shopping experience by knowing what’s there before you go, or finding what you want when you get there.? Point Inside works with mall developers and retailers to put store directory, services, promotion and event information for hundreds of malls, and over one hundred thousand retail locations, into the palm of your hand.? For shopping center developers, our mapping services provide real-time updating of map and directory content via an easy-to-use web portal.? For retailers, our platform allows quick, easy, and flexible management of mobile advertising and promotional campaigns, driving store foot traffic by connecting with consumers when they’re literally right nearby and looking for a reason to visit the store.</string>
+    <string name="about_5">For more information and complete terms of use please visit us on the web at www.pointinside.com/wordpress/?page_id=465.</string>
+    <string name="feedback_send">Send</string>
+    <string name="feedback_cancel">Cancel</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="feedback_email_hint">Your email (Optional)</string>
+    <string name="feedback_message_hint">"Problems or praise? We want to hear from you! Touch here to write your comment, and remember to include your email address if you would like a reply. 
+Thanks! 
+The Point Inside Team"</string>
+    <string name="feedback_dialog_message">Sending feedback...</string>
+    <string name="feedback_dialog_error_message_title">Oops!</string>
+    <string name="feedback_dialog_error_button_ok">OK</string>
+    <string name="feedback_dialog_error_message">We were unable to send your feedback. Please try again.</string>
+    <string name="quickaction_missing_name">Unknown</string>
+    <string name="filter_stores">Stores</string>
+    <string name="filter_services">Services</string>
+    <string name="filter_events">Events</string>
+    <string name="filter_promos">Promos</string>
+    <string name="filter_info">Info</string>
+    <string name="details">Details</string>
+    <string name="hours">Hours</string>
+    <string name="promotions">Promotions</string>
+    <string name="events">Events</string>
+    <string name="information">Information</string>
+    <string name="featured">Featured</string>
+    <string name="no_results">No Results</string>
+    <string name="Contact">Contact</string>
+    <string name="valid">"Valid: "</string>
+    <string name="toggle_like">Like</string>
+    <string name="toggle_unlike">Unlike</string>
+    <string name="speech_prompt">Speak your search phrase</string>
+    <string name="venue_place_search_no_results">No matches found</string>
+    <string name="venue_map_search_no_results">Nothing Found</string>
+    <string name="to">" to "</string>
+    <string name="abbr_today">"Today: "</string>
+    <string name="abbr_monday">"MON: "</string>
+    <string name="abbr_tuesday">"TUE: "</string>
+    <string name="abbr_wednesday">"WED: "</string>
+    <string name="abbr_thursday">"THU: "</string>
+    <string name="abbr_friday">"FRI: "</string>
+    <string name="abbr_saturday">"SAT: "</string>
+    <string name="abbr_sunday">"SUN: "</string>
+    <string name="start">Start:</string>
+    <string name="end">End:</string>
+    <string name="valid_from">Valid From:</string>
+    <string name="until">Until:</string>
+    <string name="msg_no_services">No services found in area</string>
+    <string name="msg_no_restrooms">No restrooms found in area</string>
+    <string name="msg_no_atms">No atms found in area</string>
+    <string name="msg_no_restaurants">No restaurants found in area</string>
+    <string name="msg_no_elevators_or_escalators">No elevators or escalators found in area</string>
+    <string name="msg_no_escalators">No escalators found in area</string>
+    <string name="msg_no_stairs">No stairs found in area</string>
+    <string name="msg_no_promos">No promotions found in area</string>
+    <string name="msg_no_events">No events found in area</string>
+    <string name="msg_no_parking">No parking found in area</string>
+    <string name="msg_no_entrance">No entrance found in area</string>
+    <string name="msg_no_transportation">No transportation found in area</string>
+    <string name="search_hint">Search</string>
+    <string name="searching">"Searching:
+"<b>%s</b></string>
+    <string name="no_results_text">"No results for:
+"<b>%s</b></string>
+    <string name="deals_title">Deals</string>
+    <string name="deal_not_available">Deal no longer available</string>
+    <string name="deal_loading">Loading offer...</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="calculating_route">Obtaining route...</string>
+    <string name="calculate_route_error">Error calculating route</string>
+    <string name="route_destination">To <b>%s</b></string>
+    <string name="route_distance"><b>{0}</b> {1} - <b>{2}</b> {3}</string>
+    <string name="pick_route">Pick route points</string>
+    <string name="pick_start_point">Pick start point</string>
+    <string name="pick_end_point">Pick end point</string>
+    <string name="deal_expires_on">Expires on %s</string>
+    <string name="deal_expires">Expires %s</string>
+    <string name="deal_upc">Code: %s</string>
+    <string name="deal_code_na">Code: N/A</string>
+    <string name="distance_label">%s mi</string>
+    <string name="levels">Levels</string>
+    <string name="zones">Zones</string>
+    <string name="services">Services</string>
+    <string name="service_restrooms">Restrooms</string>
+    <string name="service_food">Food</string>
+    <string name="service_atm">ATMs</string>
+    <string name="service_elevator_escalator">Elevators/Escalators</string>
+    <string name="service_entrance">Entrances</string>
+    <string name="service_parking">Parking</string>
+    <string name="service_transportation">Transportation</string>
+    <string name="nearby">Nearby</string>
+    <string name="in_venue">In %s</string>
+    <string name="no_in_venue_results">No results in venue.</string>
+    <string name="number_of_likes_one">%s person likes this</string>
+    <string name="number_of_likes">%s people like this</string>
+    <string name="number_of_likes_plus_you">You and %s others like this</string>
+    <string name="number_of_likes_one_plus_you">You and %s other like this</string>
+    <string name="number_of_likes_zero_plus_you">You like this</string>
+    <string name="be_the_first_to_like">Be the first to like this!</string>
+    <string name="place_browse_title">Browse places</string>
+    <string name="clothing">Clothing</string>
+    <string name="gifts">Gifts</string>
+    <string name="home">Home</string>
+    <string name="shoes">Shoes</string>
+    <string name="beauty">Beauty</string>
+    <string name="electronics">Electronics</string>
+    <string name="food">Food</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="activities">Activities</string>
+    <string name="search_results">Search results</string>
+    <string name="multiple_deals_label">%d deals here, tap to view</string>
+    <string name="user_rating">User Rating</string>
+    <string name="description">Description</string>
+    <string name="none">None at this time</string>
+    <string name="phone">Phone</string>
+    <string name="website">Website</string>
+    <string name="address">Address</string>
+    <string name="category">Category</string>
+    <string name="price">Price</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
+    <string name="not_in_this_venue">Cannot find your location in this venue</string>
+    <string name="my_location">My Location</string>
+    <string name="no_start_point">You must select a start point to use navigation</string>
+    <string name="cannot_determine_location">Cannot determine your current location, try again later...</string>
+    <string name="place_claim_title">Play Mallopoly!</string>
+    <string name="game_signup_title">Claim your place and WIN!</string>
+    <string name="game_signup_message">"One entry for each:
+"<li><ul>"Place you claim (1 per day)
+"<li>"Visit to this place page (1 per day per person)
+"</li><li>Time you share the app (1 per day)</li></ul></li></string>
+    <string name="form_label_name">Name:</string>
+    <string name="form_hint_name">Your name</string>
+    <string name="form_label_email">E-mail:</string>
+    <string name="form_hint_email">Your e-mail</string>
+    <string name="form_label_birthdate">I certify that I am 13 years or older</string>
+    <string name="terms_label">Official Rules</string>
+    <string name="privacy_label">Privacy Policy</string>
+    <string name="processing_claim">Registering your claim...</string>
+    <string name="no_response">Server error. Please try again later.</string>
+    <string name="game_congrats_message">To better your odds of <b>winning $100 daily</b> or the <b>$1000 Grand Prize</b>":
+
+"<li><ul>"Claim a new place tomorrow (1 per day)
+"<li>"Get people to view your place (1 per day per person)
+"</li><li>"Share the app (1 share per day)
+"</li></ul></li>"
+Daily winners will be notified by email. Visit "<a href="http://www.pointinside.com/mallopoly">www.pointinside.com</a> to see list of winners.</string>
+    <string name="game_congrats_title" formatted="false">"Congratulations!
+%s in %s is yours!"</string>
+    <string name="share">Share...</string>
+    <string name="game_share_subject">I recommend you check out the Point Inside app</string>
+    <string name="game_share_text">"Play MALLOPOLY? in Point Inside's free mobile app for chances to win $100 daily or a $1000 grand prize! www.pointinside.com/mallopoly"</string>
+    <string name="game_submit_error">Could not claim</string>
+    <string name="game_invalid_email">Invalid e-mail. Please check and try again.</string>
+    <string name="whats_new_title">"What's new?"</string>
+</resources>

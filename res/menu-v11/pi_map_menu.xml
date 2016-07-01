@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_search" android:orderInCategory="0" android:title="@string/txt_search" android:showAsAction="always" android:actionLayout="@layout/search_view" />
+    <item android:icon="@drawable/ic_action_shop" android:id="@id/menu_browse" android:orderInCategory="1" android:title="@string/txt_browse" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_action_deals" android:id="@id/menu_deals" android:orderInCategory="2" android:title="@string/promotions" android:checkable="true" android:showAsAction="always" android:actionLayout="@layout/deals_button_view" />
+    <item android:icon="@drawable/ic_action_myloc" android:id="@id/menu_location" android:orderInCategory="3" android:title="@string/menu_mylocation" android:showAsAction="always" />
+    <item android:icon="@drawable/menu_about" android:id="@id/about" android:orderInCategory="100" android:title="@string/menu_about" android:showAsAction="never" />
+    <item android:icon="@drawable/menu_search" android:id="@id/search" android:orderInCategory="102" android:title="@string/menu_search" android:showAsAction="never" />
+</menu>

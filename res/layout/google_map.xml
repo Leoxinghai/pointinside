@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/map"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  class="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/pi_logo" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <include android:layout_alignParentTop="true" layout="@layout/actionbar" />
+    <ViewStub android:id="@id/stub_deals" android:layout="@layout/deals_bar" android:inflatedId="@id/deal_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dealbar_height" android:layout_marginRight="@dimen/dealbar_right_margin" android:layout_below="@id/actionbar_legacy" android:layout_alignParentRight="true" />
+    <ZoomControls android:id="@id/zoom_controls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/zoom_controls_padding_right" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

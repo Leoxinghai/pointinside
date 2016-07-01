@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.pointinside.android.app"
+  android:versionCode="8"
+  android:versionName="2.11.0">
+  <!-- Copied from Google Maps Library/AndroidManifest.xml. -->
+  <uses-sdk
+    android:minSdkVersion="9"
+    android:targetSdkVersion="17"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <!-- External storage for caching. -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <!-- My Location -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <!-- Maps API needs OpenGL ES 2.0. -->
+  <uses-feature
+    android:glEsVersion="0x00020000"
+    android:required="true"/>
+  <!-- End of copy. -->
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".PointInside" android:theme="@style/Theme.PI">
+            
+    <!-- ** You need to replace the key below with your own key. **
+         The example key below will not be accepted because it is not linked to the
+         certificate which you will use to sign this application.
+         See: https://developers.google.com/maps/documentation/android/start
+         for instructions on how to get your own key. -->
+    <meta-data android:name="com.google.android.maps.v2.API_KEY"
+    android:value="AIzaSyDff3u_oFaxRFpUyniPNaMmxlQ-l5wZZqA"/>
+
+    <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+      <activity android:label="@string/app_name" android:name=".activity.SplashActivity" android:theme="@style/Theme.PI.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="standard" android:name=".ui.GoogleMapActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ui.VenueDownloadActivity" android:theme="@style/Dialog.Download"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:hardwareAccelerated="false" android:name=".ui.VenueMapActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ui.DealDetailActivity" android:theme="@style/Theme.PI"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/deals_title" android:name=".ui.DealListActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ui.DealSubActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".ui.PlaceDetailActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".ui.VenueDetailActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".ui.FeedbackActivity"/>
+        <activity android:name=".ui.AboutActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/place_browse_title" android:name=".ui.PlaceBrowseActivity" android:theme="@style/Theme.PI"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/search_hint" android:name=".ui.PlaceSearchActivity" android:theme="@style/Theme.PI"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/search_results" android:launchMode="singleTop" android:name=".ui.PlaceSearchResultsActivity" android:theme="@style/Theme.PI">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.pointinside.android.app.provider.PIWebServicesProvider" android:exported="false" android:name="com.pointinside.android.piwebservices.provider.PIWebServicesProvider"/>
+        <service android:exported="false" android:name="com.pointinside.android.piwebservices.service.PlaceSearchService"/>
+        <service android:exported="false" android:name="com.pointinside.android.piwebservices.service.DealsService"/>
+        <provider android:authorities="com.pointinside.android.app.provider.PITouchstreamProvider" android:name="com.pointinside.android.piwebservices.provider.PITouchstreamProvider"/>
+        <service android:name="com.pointinside.android.piwebservices.service.AnalyticsService"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ui.FilterWheelTestActivity" android:theme="@android:style/Theme">
+            <intent-filter>
+                <action android:name="whatever"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/place_claim_title" android:name=".ui.GamePlaceClaimActivity" android:theme="@style/Theme.PI.Game"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/place_claim_title" android:name=".ui.GameClaimCongratsActivity" android:theme="@style/Theme.PI.Game"/>
+        
+        
+      </application>
+</manifest>

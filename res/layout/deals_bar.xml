@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pointinside.android.app.widget.DealBar android:gravity="center_vertical" android:id="@id/deals_bar" android:layout_width="@dimen/dealbar_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/btn_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="1.0px" android:layout_height="fill_parent" style="@style/ActionBarLegacySeparator" />"
+<com.pointinside.android.app.widget.CheckableImageView android:id="@id/toggle_btn_map" android:background="@drawable/btn_toggle_bg" android:paddingTop="6.0dip" android:paddingBottom="3.0dip" android:clickable="true" android:layout_width="@dimen/dealbar_btn_width" android:layout_height="fill_parent" android:src="@drawable/ic_pin_toggle" android:scaleType="fitCenter" />
+        <ImageView android:layout_width="1.0px" android:layout_height="fill_parent" style="@style/ActionBarLegacySeparator" />"
+<com.pointinside.android.app.widget.CheckableImageView android:id="@id/toggle_btn_list" android:background="@drawable/btn_toggle_bg" android:paddingTop="6.0dip" android:paddingBottom="3.0dip" android:clickable="true" android:layout_width="@dimen/dealbar_btn_width" android:layout_height="fill_parent" android:src="@drawable/ic_list_toggle" android:scaleType="fitCenter" android:layout_toLeftOf="@id/toggle_btn_map" />
+    </LinearLayout>
+    <ProgressBar android:gravity="center_vertical" android:id="@id/progress_deal" android:padding="5.0dip" android:visibility="invisible" android:layout_width="@dimen/dealbar_btn_width" android:layout_height="@dimen/dealbar_btn_width" android:indeterminate="true" android:layout_toLeftOf="@id/btn_container" />
+</com.pointinside.android.app.widget.DealBar>

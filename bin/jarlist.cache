@@ -1,0 +1,7 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1413209460000 3406972 0f700f6802ba1a1f1fa7ac26d5db0666a89d75a6 D:\application\workspace\pointinside\libs\google-play-services.jar
+1413209460000 3406972 0f700f6802ba1a1f1fa7ac26d5db0666a89d75a6 D:\application\workspace\google-play-services_lib\libs\google-play-services.jar
+1413186304000 627582 cb6883d96005bc85b3e868f204507ea5b4fa9bbf D:\application\workspace\pointinside\libs\android-support-v4.jar
+1389936690000 627582 cb6883d96005bc85b3e868f204507ea5b4fa9bbf D:\application\workspace\appcompat_v7\libs\android-support-v4.jar

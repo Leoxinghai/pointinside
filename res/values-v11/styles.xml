@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PI" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+    </style>
+    <style name="Theme.PI.Splash" parent="@style/Theme.PI">
+        <item name="android:actionBarStyle">@null</item>
+    </style>
+    <style name="Theme.PI.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+    </style>
+    <style name="ActionBarLegacyButton">
+        <item name="android:background">@drawable/actionbar_legacy_button</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">@dimen/actionbar_legacy_height</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="ActionBarSearchView">
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">230.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">1.0dip</item>
+        <item name="android:hint">@string/search_hint</item>
+        <item name="android:drawableLeft">@drawable/search_box_icon</item>
+        <item name="android:drawablePadding">6.0dip</item>
+    </style>
+    <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/action_gradient</item>
+        <item name="android:titleTextStyle">@style/ActionBarText</item>
+    </style>
+    <style name="ActionBarText">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
